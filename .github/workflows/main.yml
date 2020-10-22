@@ -10,8 +10,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Hello world action step
-        uses: index.js
-        id: hello
+        uses: ./
+        id: Hello
         with:
           who-to-greet: 'asd'
       # Use the output from the `hello` step
